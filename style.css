@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+.main {
+    margin: 2em 1em;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 2.5em;
+    justify-self: end;
+    align-self: flex-end;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    padding-top: .3em;
+    padding-bottom: 1em;
+}
+
+.main p {
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9em;
+}
+
+.supervisor, .team-builder, .karma, .calculator {
+    background-color: white;
+    padding: 1.5em;
+    margin: 2em;
+    border-radius: 10px;
+    box-shadow: 0 12px 25px -6px hsl(229, 6%, 66%);
+}
+
+.supervisor h3, .team-builder h3, .karma h3, .calculator h3 {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.supervisor p, .team-builder p, .karma p, .calculator p {
+    font-weight: 200;
+    font-size: 0.9em;
+    padding-top: 0.5em;
+    padding-bottom: 3.5em;
+}
+
+.supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media (min-width: 768px) {
+
+    .main p {
+        margin: 0 30%;
+    }
+
+    .wraper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .middle-wraper {
+        height: 50%;
+        width: 50%;
+    }
+
+    .supervisor, .team-builder, .karma, .calculator {
+        margin: 0.5em;
+    }
+
+    .supervisor {
+        height: 50%;
+        width: 33%;
+        align-self: center;
+    }
+
+    .calculator {
+        height: 50%;
+        width: 33%;
+        align-self: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wraper {
+        max-width: 868px;
+    }
+}
